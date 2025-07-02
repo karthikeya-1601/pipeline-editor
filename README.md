@@ -48,13 +48,6 @@ src/
 
 ### 1. Clone the repository
 
-```
-
-git clone [https://github.com/your-username/pipeline-editor.git](https://github.com/your-username/pipeline-editor.git)
-cd pipeline-editor
-
-```
-
 ### 2. Install dependencies
 
 ```
