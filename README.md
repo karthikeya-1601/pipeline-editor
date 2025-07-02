@@ -68,3 +68,145 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Here’s a complete `README.md` for your project, based on the structure in your screenshot and the features you’ve implemented:
+
+---
+
+### 📁 `README.md`
+
+```markdown
+# 🧠 Pipeline Editor – React DAG Builder
+
+This project is a **React-based Directed Acyclic Graph (DAG) Editor**. It allows users to:
+- Visually create and connect nodes with directional edges
+- Validate the graph in real time (DAG rules enforced)
+- Add, connect, and delete nodes/edges
+- View status of DAG validity
+
+---
+
+## 🚀 Features
+
+- ✅ Add nodes with custom labels
+- 🔗 Draw edges with clear directionality (arrows)
+- ❌ Delete selected nodes or edges (via Delete key or button)
+- 📊 DAG validation:
+  - At least two nodes
+  - No cycles
+  - All nodes are connected
+  - No self-loops
+- 🔁 Real-time validation feedback (with icons)
+- 💄 Clean UI with styled buttons and node layout
+
+---
+
+## 🗂️ Project Structure
+
+```
+
+src/
+├── components/
+│   ├── AddNodeButton.js / .css      # Button to open modal to add nodes
+│   ├── DAGStatus.js / .css          # DAG status UI (valid/invalid)
+│   ├── NodeModal.js / .css          # Modal for entering node labels
+│   └── PipelineEditor.js            # Main DAG editor
+│
+├── hooks/
+│   └── useDAGValidation.js          # (Optional) Hook version of DAG validator (unused if you moved logic inline)
+│
+├── utils/
+│   └── dagValidation.js             # Contains the DAG validation logic (optional if used separately)
+│
+├── App.js / App.css                 # Root component
+├── index.js / index.css             # React app entry
+└── styles.css                       # Shared styles
+
+````
+
+---
+
+## 🛠️ Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/your-username/pipeline-editor.git
+cd pipeline-editor
+````
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Start the dev server
+
+```bash
+npm start
+```
+
+App runs locally at: `http://localhost:3000`
+
+---
+
+## 📦 Dependencies
+
+* `react`
+* `react-dom`
+* `react-scripts`
+* `reactflow`
+* `react-icons`
+
+Install missing packages using:
+
+```bash
+npm install reactflow react-icons
+```
+
+---
+
+## 📸 Screenshots
+
+| Editor View                | Node Modal               | DAG Status                 |
+| -------------------------- | ------------------------ | -------------------------- |
+| ![Editor](docs/editor.png) | ![Modal](docs/modal.png) | ![Status](docs/status.png) |
+
+*(You can add screenshots in a `/docs` folder)*
+
+---
+
+## 🧠 DAG Rules Implemented
+
+* ✔️ No cycles (DFS cycle detection)
+* ✔️ At least 2 nodes
+* ✔️ All nodes must be connected (as either source or target)
+* ✔️ No self-loops
+* ✔️ Edges must connect from right (source) to left (target)
+
+---
+
+## 🧪 Testing
+
+Currently, this project does not include unit tests. You can add tests in `App.test.js` or integrate libraries like:
+
+* `Jest`
+* `React Testing Library`
+
+---
+
+## 📄 License
+
+MIT License © \[Your Name]
+
+```
+
+---
+
+Let me know if you'd like me to:
+- Generate screenshots for docs
+- Publish this to GitHub with a sample commit
+- Add a backend for saving the graph
+
+Would you like me to include JSON import/export or layout features in this editor?
+```

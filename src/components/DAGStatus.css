@@ -1,0 +1,39 @@
+.dag-status {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-left: 15px;
+  font-weight: 500;
+  animation: fadeIn 0.5s ease;
+}
+
+.valid {
+  background-color: #e6fffa;
+  color: #234e52;
+}
+
+.invalid {
+  background-color: #fff5f5;
+  color: #9b2c2c;
+}
+
+.status-icon {
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+.status-message {
+  font-size: 0.9rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
