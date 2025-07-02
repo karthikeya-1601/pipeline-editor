@@ -8,9 +8,6 @@ A visual editor for creating and validating **Directed Acyclic Graphs (DAGs)** u
 
 ---
 
-## 📸 Demo
-
-> Live Demo (GitHub Pages): https://your-username.github.io/your-repo-name
 
 ---
 
