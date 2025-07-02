@@ -1,4 +1,3 @@
-Sure! Here's the full `README.md` content as plain text that you can copy and paste directly:
 
 ---
 
